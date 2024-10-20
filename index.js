@@ -34,11 +34,11 @@ function verificarCredsJson() {
 
 function formatearNumeroTelefono(numero) {
   let formattedNumber = numero.replace(/[^\d+]/g, '');
-  if (formattedNumber.startsWith('+52') && !formattedNumber.startsWith('+521')) {
-    formattedNumber = formattedNumber.replace('+52', '+521');
-  } else if (formattedNumber.startsWith('52') && !formattedNumber.startsWith('521')) {
-    formattedNumber = `+521${formattedNumber.slice(2)}`;
-  } else if (formattedNumber.startsWith('52') && formattedNumber.length >= 12) {
+  if (formattedNumber.startsWith('+51') && !formattedNumber.startsWith('+54')) {
+    formattedNumber = formattedNumber.replace('+51', '+54');
+  } else if (formattedNumber.startsWith('51') && !formattedNumber.startsWith('54')) {
+    formattedNumber = `+54{formattedNumber.slice(2)}`;
+  } else if (formattedNumber.startsWith('51') && formattedNumber.length >= 12) {
     formattedNumber = `+${formattedNumber}`;
   } else if (!formattedNumber.startsWith('+')) {
     formattedNumber = `+${formattedNumber}`;
